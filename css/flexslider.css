@@ -21,7 +21,6 @@
 *********************************/
 .flexslider {margin: 0; padding: 0;}
 .flexslider .slides > li {display: none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
-.flexslider .slides img {width: ; display: ;border-radius: ;}
 .flex-pauseplay span {text-transform: capitalize;}
 
 /* Clearfix for the .slides element */
@@ -81,14 +80,17 @@ html[xmlns] .slides {display: block;}
   .flex-direction-nav .flex-next {opacity: 1; right: 0;}
 }
 @media screen and (max-width: 1280px) {
+.flex-viewport {
+	max-height: 600px;
+}
 .flex-control-nav {
     bottom: 92px;
 }
 }
 @media screen and (max-width: 1024px) {
-	.flex-control-nav {bottom:10px;}
+.flex-control-nav {bottom:10px;}
 .flex-viewport {
-max-height: 500px;
+max-height: 600px;
 }
 .flex-control-nav {
     bottom: 30px;
@@ -98,38 +100,61 @@ max-height: 500px;
 @media screen and (max-width: 768px) {
 
 .flex-viewport {
-max-height: 450px;
+max-height: 480px;
 }
 .flex-control-nav {
-bottom:24px;
+bottom:5px;
 }
 }
 @media screen and (max-width: 640px){
 
 .flex-control-nav {
-bottom:19px;
+bottom:5px;
 }
+.flex-viewport {
+	max-height: 400px;
+	}
+	}
+@media screen and (min-width: 641px){
 
-}
+	.flex-control-nav {
+	bottom:5px;
+	}
+	.flex-viewport {
+		min-height: 400px;
+		}
+		}
+@media screen and (min-width: 481px) {
+	.flex-control-paging li a {
+	width: 20px;
+	height: 5px;
+	}
+	.flex-control-nav {
+	bottom: -2px;
+	}
+	.flex-viewport {
+	min-height: 400px;
+	}
+	}
 @media screen and (max-width: 480px) {
 .flex-control-paging li a {
-width: 40px;
+width: 20px;
 height: 5px;
 }
 .flex-control-nav {
-bottom: -6px;
+bottom: -2px;
 }
 .flex-viewport {
-max-height: 390px;
+max-height: 270px;
 }
 }
 @media screen and (max-width: 320px) {
 
 .flex-control-nav {
-bottom: -7px;
+bottom: -2px;
 margin: 0 0;
 }
 .flex-viewport {
-max-height: 320px;
+max-height: 270px;
 }
 }
