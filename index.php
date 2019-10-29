@@ -102,13 +102,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								while($data = $sql->fetch_array()) {
 						?>
 						<li>
-							<div class="banner-text">
-								<h3><?php echo $data['kalimat']; ?></h3>
-								<br><br>
+						<div class="row">
+							<div class="col-xs-12">
+								<div class="banner-text" style="width:60%; height:600px; font-size:auto;">
+									<h3><?php echo $data['kalimat']; ?></h3>
+									<br><br>
+								</div>
+								<div class="img-responsive">
+									<?php echo '<img style="width:100%; height:600px;" src="images/'.$data['nama_image'].'"></center>' ?>
+								</div>
 							</div>
-							<div class="img-responsive">
-								<?php echo '<img src="images/'.$data['nama_image'].'"></center>' ?>
-							</div>
+						</div>
 						</li>
 						<?php
 								}
