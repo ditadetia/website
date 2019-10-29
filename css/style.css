@@ -262,8 +262,8 @@ body a:hover{
     font-size: 1.2em;
     color: #190608;
     margin: 1em 0;
-    line-height:1.8em;
-    font-weight: 400;
+    line-height:1.0em;
+    font-weight: 500;
 }
 .banner-text h2 {
     font-size: 2.5em;
@@ -657,6 +657,17 @@ h3.agileits-icons-title {
     text-align: center;
     word-wrap: break-word;
 }
+@media screen and (min-width: 601px) {
+    h3 {
+      font-size: 28px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    h3 {
+      font-size: 20px;
+    }
+  }
 @media (max-width:991px){
 	h3.agileits-icons-title {
 		font-size: 28px;
@@ -2704,7 +2715,7 @@ a.w3_agile_vimeo:hover{
   font-size: 1em;
 }
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #4C211D;
+  background-color: green;
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
   background-color: #fff;
@@ -2719,7 +2730,7 @@ a.w3_agile_vimeo:hover{
 }
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
     border-color: #fff;
-	background:#9E6E4E;
+	background:green;
 }
 .navigation {
     margin: 0.5em 0 0;
@@ -2734,7 +2745,7 @@ a.w3_agile_vimeo:hover{
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     color: #fff;
-    background-color: #9E6E4E;
+    background-color: green;
 }
 .navbar-default .navbar-nav > li > a {
     color: #1D0E05;
